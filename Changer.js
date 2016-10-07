@@ -2,6 +2,16 @@ var topStr= "";
 var nu= 0;
 var oper= "";
 function changeTop(id_checked){
+	if(id_checked === "a"){
+		if(oper = "="){
+			nu *= -1
+			oper = "";
+			document.getElementById('output').innerHTML = nu;
+		} else{
+			nu *= -1;
+			document.getElementById('output').innerHTML = nu;
+		}
+	}
 	if(id_checked === "b"){
 		topStr += "1";
 		document.getElementById('output').innerHTML = topStr;

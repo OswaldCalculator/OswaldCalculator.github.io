@@ -17,7 +17,7 @@ h1 {
 	font-size: 72px;
 	left: 0;
 	right: 0;
-	top: -60px;
+	top: -40px;
 	position: absolute;
 	text-align: center;
 	color: #fcfdfe;
@@ -46,7 +46,7 @@ h1 {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 100px;
+	top: 23%;
 	width: 650px;
 	height: 520px;
 	margin: auto;

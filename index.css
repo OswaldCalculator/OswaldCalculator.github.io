@@ -21,6 +21,10 @@ h1 {
 	position: absolute;
 	text-align: center;
 	color: #fcfdfe;
+	-webkit-user-select: none; /* Chrome/Safari */     
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none;
+	user-select: none;
 }
 
 /*Div for calculator*/
@@ -44,6 +48,10 @@ h1 {
 	right: 10px;
 	height: 150px;
 	background-color: #2a3132;
+	-webkit-user-select: none; /* Chrome/Safari */     
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none;
+	user-select: none;
 }
 
 /*Actual text of #answers div*/
@@ -252,23 +260,18 @@ h1 {
 	outline: none;
 	border: none;
 	cursor: pointer;
+	-webkit-user-select: none; /* Chrome/Safari */     
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none;
+	user-select: none;
 }
 
-.numMult {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 10px;
-	width: 100%;
-	height: 60px;
-	text-align: center;
-	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
-	color: #fcfdfe;
-	background-color: transparent;
-	outline: none;
-	border: none;
-	cursor: pointer;
+.num:hover {
+	background-color: #1d2223;
+}
+
+.num:active {
+	background-color: #383e3f;
 }
 
 .numDif {
@@ -286,5 +289,16 @@ h1 {
 	outline: none;
 	border: none;
 	cursor: pointer;
+	-webkit-user-select: none; /* Chrome/Safari */     
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none;
+	user-select: none;
 }
 
+.numDif:hover {
+	background-color: #1d2223;
+}
+
+.numDif:active {
+	background-color: #383e3f;
+}

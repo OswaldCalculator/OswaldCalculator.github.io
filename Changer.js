@@ -62,6 +62,9 @@ function changeTop(id_checked){
 		}else if((nu != 0) && (oper === "")){
 			oper = "+";
 			document.getElementById('output').innerHTML = "+";
+		}else if(oper === "="){
+			oper = "+";
+			document.getElementById('output').innerHTML = "+";
 		}else{
 			if(oper === "+"){
 				nu += Number(topStr);
@@ -92,6 +95,9 @@ function changeTop(id_checked){
 			topStr = "";
 			document.getElementById('output').innerHTML = "-";
 		}else if((nu != 0) && (oper === "")){
+			oper = "-";
+			document.getElementById('output').innerHTML = "-";
+		}else if(oper === "="){
 			oper = "-";
 			document.getElementById('output').innerHTML = "-";
 		}else{
@@ -126,6 +132,9 @@ function changeTop(id_checked){
 		}else if((nu != 0) && (oper === "")){
 			oper = "*";
 			document.getElementById('output').innerHTML = "*";
+		}else if(oper === "="){
+			oper = "*";
+			document.getElementById('output').innerHTML = "*";
 		}else{
 			if(oper === "+"){
 				nu += Number(topStr);
@@ -158,6 +167,9 @@ function changeTop(id_checked){
 		}else if((nu != 0) && (oper === "")){
 			oper = "/";
 			document.getElementById('output').innerHTML = "/";
+		}else if(oper === "="){
+			oper = "/";
+			document.getElementById('output').innerHTML = "/";
 		}else{
 			if(oper === "+"){
 				nu += Number(topStr);
@@ -185,22 +197,22 @@ function changeTop(id_checked){
 		if(oper === "+"){
 			nu += Number(topStr);
 			document.getElementById('output').innerHTML = nu;
-			oper = "";
+			oper = "=";
 			topStr = "";
 		} else if(oper === "-"){					
 			nu -= Number(topStr);
 			document.getElementById('output').innerHTML = nu;
-			oper = "";
+			oper = "=";
 			topStr = "";					
 		} else if(oper === "*"){			
 			nu *= Number(topStr);
 			document.getElementById('output').innerHTML = nu;
-			oper = "";
+			oper = "=";
 			topStr = "";
 		} else if(oper === "/") {
 			nu /= Number(topStr);
 			document.getElementById('output').innerHTML = nu;
-			oper = "";
+			oper = "=";
 			topStr = "";
 		}
 	}					

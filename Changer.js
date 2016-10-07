@@ -4,10 +4,12 @@ var oper= "";
 function changeTop(id_checked){
 	if(id_checked === "a"){
 		if(oper = "="){
-			nu *= -1;
+			nu *= -1
 			oper = "";
 			document.getElementById('output').innerHTML = nu;
-		} else{
+		}else if(nu === 0){
+			document.getElementById('output').innerHTML = nu;
+		}else{
 			nu *= -1;
 			document.getElementById('output').innerHTML = nu;
 		}

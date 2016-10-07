@@ -3,18 +3,22 @@ var nu= 0;
 var oper= "";
 function changeTop(id_checked){
 	if(id_checked === "a"){
-		if(oper = "="){
-			nu *= -1
+		if((oper = "=") && (topStr === "")){
+			nu *= -1;
 			oper = "";
 			document.getElementById('output').innerHTML = nu;
-		}else if(nu === 0){
+		}else if((topStr === "") && (nu === 0)){
 			document.getElementById('output').innerHTML = nu;
-		}else{
+		}else if((topStr != "") && (nu === 0)){
+			nu += Number(topStr);
 			nu *= -1;
 			document.getElementById('output').innerHTML = nu;
 		}
-	}
-	if(id_checked === "b"){
+		else{
+			nu *= -1;
+			document.getElementById('output').innerHTML = nu;
+		}
+	}else if(id_checked === "b"){
 		if(oper === "="){
 			nu = 0;
 			oper = "";

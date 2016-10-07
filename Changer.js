@@ -15,48 +15,125 @@ function changeTop(id_checked){
 		}
 	}
 	if(id_checked === "b"){
-		topStr += "1";
-		document.getElementById('output').innerHTML = topStr;
+		if(oper === "="){
+			nu = 0;
+			oper = "";
+			topStr += "1";
+			document.getElementById('output').innerHTML = topStr;
+		}else{
+			topStr += "1";
+			document.getElementById('output').innerHTML = topStr;
+		}
 	}else if(id_checked === "c"){
-		topStr += "4";
-		document.getElementById('output').innerHTML = topStr;
+		if(oper === "="){
+			nu = 0;
+			oper = "";
+			topStr += "4";
+			document.getElementById('output').innerHTML = topStr;
+		}else{
+			topStr += "4";
+			document.getElementById('output').innerHTML = topStr;
+		}
 	}else if(id_checked === "d"){
-		topStr += "7";
-		document.getElementById('output').innerHTML = topStr;
+		if(oper === "="){
+			nu = 0;
+			oper = "";
+			topStr += "7";
+			document.getElementById('output').innerHTML = topStr;
+		}else{
+			topStr += "7";
+			document.getElementById('output').innerHTML = topStr;
+		}
 	}else if(id_checked === "e"){
 		topStr = "";
 		nu = 0;
 		oper = "";
 		document.getElementById('output').innerHTML = "0";
 	}else if(id_checked === "f"){
-		topStr += "0";
-		document.getElementById('output').innerHTML = topStr;
+		if(oper === "="){
+			nu = 0;
+			oper = "";
+			topStr += "";
+			document.getElementById('output').innerHTML = topStr;
+		}else{
+			topStr += "0";
+			document.getElementById('output').innerHTML = topStr;
+		}
 	}else if(id_checked === "g"){
-		topStr += "2";
-		document.getElementById('output').innerHTML = topStr;
+		if(oper === "="){
+			nu = 0;
+			oper = "";
+			topStr += "2";
+			document.getElementById('output').innerHTML = topStr;
+		}else{
+			topStr += "2";
+			document.getElementById('output').innerHTML = topStr;
+		}
 	}else if(id_checked === "h"){
-		topStr += "5";
-		document.getElementById('output').innerHTML = topStr;
+		if(oper === "="){
+			nu = 0;
+			oper = "";
+			topStr += "5";
+			document.getElementById('output').innerHTML = topStr;
+		}else{
+			topStr += "5";
+			document.getElementById('output').innerHTML = topStr;
+		}
 	}else if(id_checked === "i"){
-		topStr += "8";
-		document.getElementById('output').innerHTML = topStr;
+		if(oper === "="){
+			nu = 0;
+			oper = "";
+			topStr += "8";
+			document.getElementById('output').innerHTML = topStr;
+		}else{
+			topStr += "8";
+			document.getElementById('output').innerHTML = topStr;
+		}
 	}else if(id_checked === "j"){
 		topStr = "";
 		nu = 0;
 		oper = "";
 		document.getElementById('output').innerHTML = "0";
 	}else if(id_checked === "k"){
-		topStr += ".";
-		document.getElementById('output').innerHTML = topStr;
+		if(oper === "="){
+			nu = 0;
+			oper = "";
+			topStr += ".";
+			document.getElementById('output').innerHTML = topStr;
+		}else{
+			topStr += ".";
+			document.getElementById('output').innerHTML = topStr;
+		}
 	}else if(id_checked === "l"){
-		topStr += "3";
-		document.getElementById('output').innerHTML = topStr;
+		if(oper === "="){
+			nu = 0;
+			oper = "";
+			topStr += "3";
+			document.getElementById('output').innerHTML = topStr;
+		}else{
+			topStr += "3";
+			document.getElementById('output').innerHTML = topStr;
+		}
 	}else if(id_checked === "m"){
-		topStr += "6";
-		document.getElementById('output').innerHTML = topStr;
+		if(oper === "="){
+			nu = 0;
+			oper = "";
+			topStr += "6";
+			document.getElementById('output').innerHTML = topStr;
+		}else{
+			topStr += "6";
+			document.getElementById('output').innerHTML = topStr;
+		}
 	}else if(id_checked === "n"){
-		topStr += "9";
-		document.getElementById('output').innerHTML = topStr;
+		if(oper === "="){
+			nu = 0;
+			oper = "";
+			topStr += "9";
+			document.getElementById('output').innerHTML = topStr;
+		}else{
+			topStr += "9";
+			document.getElementById('output').innerHTML = topStr;
+		}
 	}else if(id_checked === "o"){
 		if((topStr.length === 1) || (topStr.length === 0)){
 			topStr = "";

@@ -285,24 +285,48 @@ function changeTop(id_checked){
 	}else if(id_checked === "equ") {
 		if(oper === "+"){
 			nu += Number(topStr);
-			document.getElementById('output').innerHTML = nu;
-			oper = "=";
-			topStr = "";
-		} else if(oper === "-"){					
+			if(nu.toString().length > 15){
+				document.getElementById('output').innerHTML = nu.toString().substr(0, 15);
+				oper = "=";
+				topStr = "";
+			} else{
+				document.getElementById('output').innerHTML = nu;
+				oper = "=";
+				topStr = "";
+			}
+		} else if(oper === "-"){
 			nu -= Number(topStr);
-			document.getElementById('output').innerHTML = nu;
-			oper = "=";
-			topStr = "";					
+			if(nu.toString().length > 15){
+				document.getElementById('output').innerHTML = nu.toString().substr(0, 15);
+				oper = "=";
+				topStr = "";
+			} else{
+				document.getElementById('output').innerHTML = nu;
+				oper = "=";
+				topStr = "";
+			}
 		} else if(oper === "*"){			
 			nu *= Number(topStr);
-			document.getElementById('output').innerHTML = nu;
-			oper = "=";
-			topStr = "";
+			if(nu.toString().length > 15){
+				document.getElementById('output').innerHTML = nu.toString().substr(0, 15);
+				oper = "=";
+				topStr = "";
+			} else{
+				document.getElementById('output').innerHTML = nu;
+				oper = "=";
+				topStr = "";
+			}
 		} else if(oper === "/") {
 			nu /= Number(topStr);
-			document.getElementById('output').innerHTML = nu;
-			oper = "=";
-			topStr = "";
+			if(nu.toString().length > 15){
+				document.getElementById('output').innerHTML = nu.toString().substr(0, 15);
+				oper = "=";
+				topStr = "";
+			} else{
+				document.getElementById('output').innerHTML = nu;
+				oper = "=";
+				topStr = "";
+			}
 		}
 	}					
 }
